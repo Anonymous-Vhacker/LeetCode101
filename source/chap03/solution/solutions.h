@@ -41,5 +41,12 @@ ostream& operator<<(ostream &o, const vector<T> &x) {
     return o;
 }
 
+namespace two_sum_ii_167 {
+    class Solution {
+    public:
+        vector<int> twoSum(vector<int>& numbers, int target);
+    };
+} // two_sum_ii_167
+
 
 #endif //SOLUTIONS_H
