@@ -48,5 +48,11 @@ namespace two_sum_ii_167 {
     };
 } // two_sum_ii_167
 
+namespace merge_sorted_array_88 {
+    class Solution {
+    public:
+        void merge(vector<int>& nums1, int m, vector<int>& nums2, int n);
+    };
+} // merge_sorted_array_88
 
 #endif //SOLUTIONS_H

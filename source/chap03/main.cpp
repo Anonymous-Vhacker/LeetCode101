@@ -14,7 +14,19 @@ void test_167() {
     cout << "result = " << result << endl;
 }
 
+void test_88() {
+    merge_sorted_array_88::Solution c88_Solution;
+    int m = 3, n = 3;
+    vector<int> nums1 = {1,2,3,0,0,0}, nums2 = {2,5,6};
+    cout << "input: " << endl;
+    cout << "nums1 = " << nums1 << ", m = " << m << endl;
+    cout << "nums2 = " << nums2 << ", n = " << n << endl;
+    c88_Solution.merge(nums1, m , nums2, n);
+    cout << "result: " << nums1 << endl;
+}
+
 int main() {
-    test_167();
+//    test_167();
+    test_88();
     return 0;
 }
