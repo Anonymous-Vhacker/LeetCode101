@@ -5,8 +5,10 @@
 #ifndef SOLUTIONS_H
 #define SOLUTIONS_H
 
+#pragma once
 #include <iostream>
 #include <vector>
+#include "linkList.h"
 using namespace std;
 
 namespace py_pr{
@@ -54,5 +56,12 @@ namespace merge_sorted_array_88 {
         void merge(vector<int>& nums1, int m, vector<int>& nums2, int n);
     };
 } // merge_sorted_array_88
+
+namespace linked_list_cycle_ii_142 {
+    class Solution {
+    public:
+        ListNode *detectCycle(ListNode *head);
+    };
+} // linked_list_cycle_ii_142
 
 #endif //SOLUTIONS_H

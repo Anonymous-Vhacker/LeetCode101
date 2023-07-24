@@ -1,6 +1,7 @@
 //
 // Created by weh on 2023/7/19.
 //
+#pragma once
 #include "solutions.h"
 
 void test_167() {
@@ -25,8 +26,23 @@ void test_88() {
     cout << "result: " << nums1 << endl;
 }
 
+void test_142() {
+    linked_list_cycle_ii_142::Solution c142_Solution;
+    vector<int> head = {3,2,0,-4};
+    CircleList list;
+    list = CreateCircleLinkList(head, 1);
+    PrintCircleLinkList(list);
+    auto cirPoint = c142_Solution.detectCycle(list.head);
+    if (cirPoint)
+        cout << "circle point value: " << cirPoint->val << endl;
+    else
+        cout << "not circle" << endl;
+    DestroyCircleLinkList(list);
+}
+
 int main() {
 //    test_167();
-    test_88();
+//    test_88();
+    test_142();
     return 0;
 }
